@@ -13,6 +13,8 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("fewfewfewf")
+        
         addChildViewController(childVC: "HomeViewController", title: "首页", imageName: "tabbar_home")
         addChildViewController(childVC: "MessageViewController", title: "消息", imageName: "tabbar_message_center")
         addChildViewController(childVC: "DiccoverViewController", title: "发现", imageName: "tabbar_discover")
