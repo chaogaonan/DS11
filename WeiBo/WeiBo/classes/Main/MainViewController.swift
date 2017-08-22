@@ -12,10 +12,6 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        guard let jsonPath = Bundle.main.path(forResource: "MainVCSettings", ofType: "json") else{
-            return
-        }
         
         addChildViewController(childVC: "HomeViewController", title: "首页", imageName: "tabbar_home")
         addChildViewController(childVC: "MessageViewController", title: "消息", imageName: "tabbar_message_center")
